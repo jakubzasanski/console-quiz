@@ -2,4 +2,4 @@
 
 IDE: CLion
 
-Kompilatro: MinGW
+Kompilator: MinGW
