@@ -1,0 +1,20 @@
+quiz_01
+Quiz temat nr 1
+Autor 1
+3
+quiz_02
+Quiz temat nr 2
+Autor 2
+1
+quiz_03
+Quiz temat nr 3
+Autor 3
+5
+quiz_04
+Quiz temat nr 4
+Autor 4
+2
+quiz_05
+Quiz temat nr 5
+Autor 5
+1

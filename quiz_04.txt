@@ -1,0 +1,34 @@
+5
+Quiz temat nr 4
+Autor 4
+2
+Pytanie 1
+odpowiedz A
+odpowiedz B
+odpowiedz C
+odpowiedz D
+A
+Pytanie 2
+odpowiedz A
+odpowiedz B
+odpowiedz C
+odpowiedz D
+B
+Pytanie 3
+odpowiedz A
+odpowiedz B
+odpowiedz C
+odpowiedz D
+C
+Pytanie 4
+odpowiedz A
+odpowiedz B
+odpowiedz C
+odpowiedz D
+A
+Pytanie 5
+odpowiedz A
+odpowiedz B
+odpowiedz C
+odpowiedz D
+B
