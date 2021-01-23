@@ -1,34 +1,34 @@
 5
-Quiz temat nr 3
-Autor 3
+Gwiezdne wojny
+George Lucas
 5
-Pytanie 1
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
-A
-Pytanie 2
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Co powoduje ze miecze swietlne maja rozne kolory?
+Moc wlasciciela
+Krysztal kyber
+Fazy ksiezyca
+Od zuzycia miecza
 B
-Pytanie 3
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Kim byl R2-D2?
+kosmita
+mistrzem jedi
+Astrodroidem
+padawanem
 C
-Pytanie 4
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Kto byl lordem sidiusem?
+Obi-wan Kenobi
+Darth maul
+Jar Jar Bings
+Wielki Kanclerz
+D
+Jaki kolor miecza posiadal Mistrz Yoda?
+Zielony
+Niebieski
+Czerwony
+Fioletowy
 A
-Pytanie 5
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Jaki kolor miecza miala straz swiatynna?
+Niebieski
+Zolty
+Pomaranczowy
+Czarny
 B

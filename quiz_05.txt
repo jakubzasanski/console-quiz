@@ -1,34 +1,34 @@
 5
-Quiz temat nr 5
-Autor 5
+Piraci z Karaibow
+Jack Sparrow
 1
-Pytanie 1
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
-A
-Pytanie 2
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Co bylo w skrzyni umarlaka?
+Perla
+Serce
+Rum
+Skarb
 B
-Pytanie 3
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Czym jest Czarna Perla?
+Statkiem
+Miotla
+Psem
+Perla
+A
+Kto gral Will'a Turner'a?
+Johnny Depp
+Keira Knightley
+Orlando Bloom
+Jack Davenport
 C
-Pytanie 4
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Kto zakochal sie w syrenie?
+Pastor
+Marynarz
+Kapitan statku
+Kucharz
 A
-Pytanie 5
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
-B
+Jak nazywa sie 4 czesc?
+Skrzynia Umarlaka
+Na krancu swiata
+Klatwa czarnej Perly
+Na nieznanych wodach
+D

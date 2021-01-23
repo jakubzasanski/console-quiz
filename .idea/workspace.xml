@@ -11,11 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ccebc14-ae6a-4015-9376-6e7f3f500d50" name="Default Changelist" comment="">
+    <list default="true" id="8ccebc14-ae6a-4015-9376-6e7f3f500d50" name="Default Changelist" comment="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz_01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz_02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz_03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz_04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz_05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_05.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +44,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -52,11 +57,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.console-quiz">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="console-quiz" TARGET_NAME="console-quiz" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="console-quiz" RUN_TARGET_NAME="console-quiz">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -92,8 +92,20 @@
       <updated>1610726872796</updated>
       <workItem from="1610726874091" duration="389000" />
       <workItem from="1610727281418" duration="364000" />
-      <workItem from="1610727754413" duration="19404000" />
+      <workItem from="1610727754413" duration="19844000" />
+      <workItem from="1610868850358" duration="36000" />
+      <workItem from="1610869543381" duration="653000" />
+      <workItem from="1610873963354" duration="30000" />
+      <workItem from="1611428424808" duration="4231000" />
     </task>
+    <task id="LOCAL-00001" summary="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja.">
+      <created>1610752237465</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610752237465</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +121,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja." />
   </component>
 </project>

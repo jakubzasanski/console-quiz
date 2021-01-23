@@ -1,34 +1,34 @@
 5
-Quiz temat nr 2
-Autor 2
-1
-Pytanie 1
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Harry Potter
+J. K. Rowling
+2
+Gdzie Harry Potter znalazl kamien filozoficzny?
+w swojej kieszeni
+w sakiewce Rona
+u Hagrida w kociolku
+w banku gringotta
 A
-Pytanie 2
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Jak nazywal sie ojciec Drakona?
+Albus dumbledore
+Luciusz Malfoy
+Severus Snape
+Harry Potter
 B
-Pytanie 3
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Kim byla Mruzka?
+Kot Hermiony
+Szczur
+Skrzat domowy
+Specjalna spinka do wlosow
 C
-Pytanie 4
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
+Efekt zaklecia Lumos to:
+Swiatlo
+Usmiercenie
+Otwarcie zamka
+Ugotowanie posilku
 A
-Pytanie 5
-odpowiedz A
-odpowiedz B
-odpowiedz C
-odpowiedz D
-B
+Kto zabil Snape?
+Czarny Pan
+Voldemort
+Sam wiesz kto
+wszystkie odpowiedzi sa poprawne
+D
