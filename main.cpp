@@ -21,6 +21,7 @@ void author(){
     cout << "* Copyright (c) 2020 Krzysztof Karkowski && Jakub Zasanski" << endl;
     cout << "*********************************************" << endl;
 }
+
 void user_results(){
     string nick;
 
@@ -139,8 +140,7 @@ void best_results(){
 
         while(getline(result_list,fileLine)){
 
-            for(i = 0; i < 2; i++ )
-            {
+            for(i = 0; i < 2; i++ ){
 
                 switch (i) {
                     case 0:
@@ -157,7 +157,6 @@ void best_results(){
 
                 }
             }
-
 
             if(quiz_name == tab[0]){
                 save_tab = tab[1];
@@ -182,86 +181,80 @@ void best_results(){
 }
 
 void  latest_results(){
+    fstream result_list;
+    result_list.open("result_list.txt", ios::in);
+    if (result_list.good()){
+        string fileLine;
+        int counter = 1;
+        while(getline(result_list,fileLine)){
+            if(counter<11) {
+                cout << endl << counter <<'.';
+                for (int i = 0; i < 3; i++) {
 
-        fstream result_list;
-        result_list.open("result_list.txt", ios::in);
-        if (result_list.good()){
-            string fileLine;
-            int counter = 1;
-            while(getline(result_list,fileLine)){
-                if(counter<11) {
-                    cout << endl << counter <<'.';
-                    for (int i = 0; i < 3; i++) {
+                    switch (i) {
+                        case 0:
+                            cout << endl << "\t" << "Nick: " << fileLine << endl;
+                            break;
+                        case 1:
+                            getline(result_list, fileLine);
+                            cout << "\t" << "Nazwa quizu: " << fileLine << endl;
 
-                        switch (i) {
-                            case 0:
-                                cout << endl << "\t" << "Nick: " << fileLine << endl;
-                                break;
-                            case 1:
-                                getline(result_list, fileLine);
-                                cout << "\t" << "Nazwa quizu: " << fileLine << endl;
+                            break;
+                        case 2:
+                            getline(result_list, fileLine);
+                            cout << "\t" << "Wynik: " << fileLine << endl;
+                            getline(result_list, fileLine);
 
-                                break;
-                            case 2:
-                                getline(result_list, fileLine);
-                                cout << "\t" << "Wynik: " << fileLine << endl;
-                                getline(result_list, fileLine);
-
-                                break;
-                        }
-
+                            break;
                     }
 
-                 counter++;
                 }
-                else{
-                    return;
-                }
+
+             counter++;
+            }
+            else{
+                return;
             }
         }
-        result_list.close();
     }
+    result_list.close();
+}
 
 
 
 void result_menu(){
+    cout << "*********************************************" << endl;
+    cout << "* [0] - Powrot do menu glownego" << endl;
+    cout << "* [1] - Wyniki dla uzytkownika" << endl;
+    cout << "* [2] - Wyniki dla quizu" << endl;
+    cout << "* [3] - Najlepszy wynik w quizie" << endl;
+    cout << "* [4] - Ostatnie 10 wynikow" << endl;
+    cout << "*********************************************" << endl;
 
-        cout << "*********************************************" << endl;
-        cout << "* [0] - Powrot do menu glownego" << endl;
-        cout << "* [1] - Wyniki dla uzytkownika" << endl;
-        cout << "* [2] - Wyniki dla quizu" << endl;
-        cout << "* [3] - Najlepszy wynik w quizie" << endl;
-        cout << "* [4] - Ostatnie 10 wynikow" << endl;
-        cout << "*********************************************" << endl;
+    cout << "Wybierz opcje:";
 
-        cout << "Wybierz opcje:";
+    int result_menu;
 
-        int result_menu;
-
-        while(!(cin >> result_menu) || (result_menu < 0) || result_menu > 4 ){
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        }
-
-        switch(result_menu){
-            case 1:
-              user_results() ;
-                break;
-            case 2:
-                quiz_results();
-                break;
-            case 3:
-                best_results();
-                break;
-            case 4:
-                latest_results();
-                break;
-        }
-
-
-
-
+    while(!(cin >> result_menu) || (result_menu < 0) || result_menu > 4 ){
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
+
+    switch(result_menu){
+        case 1:
+          user_results() ;
+            break;
+        case 2:
+            quiz_results();
+            break;
+        case 3:
+            best_results();
+            break;
+        case 4:
+            latest_results();
+            break;
+    }
+}
 
 
 void start_quiz(string quiz_name){
