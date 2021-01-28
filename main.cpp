@@ -26,6 +26,11 @@ void user_results(){
 
     cout << "Podaj nick: " << endl ;
 
+    while(!(cin >> nick)){
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
+
     fstream result_list;
     result_list.open("result_list.txt", ios::in);
 
@@ -68,6 +73,10 @@ void quiz_results(){
 
     cout << "Podaj nazwe quizu: " << endl ;
 
+    while(!(cin >> quiz_name)){
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
 
     fstream result_list;
     result_list.open("result_list.txt", ios::in);
@@ -113,6 +122,11 @@ void best_results(){
     cout << "Podaj nazwe quizu: " << endl ;
 
 
+    while(!(cin >> quiz_name)){
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
+
     fstream result_list;
     result_list.open("result_list.txt", ios::in);
     if (result_list.good()){
@@ -151,7 +165,8 @@ void best_results(){
             }
 
         }
-        if(i>2) {
+
+        if(percent.size()>0) {
             for (int z = 0; z < percent.size(); z++) {
                 if (percent[z] > best_value) {
                     best_value = percent[z];

@@ -1,20 +1,20 @@
 quiz_01
-Quiz temat nr 1
-Autor 1
+Komiksy Marvel'a
+Stan Lee
 3
 quiz_02
-Quiz temat nr 2
-Autor 2
-1
+Harry Potter
+J. K. Rowling
+2
 quiz_03
-Quiz temat nr 3
-Autor 3
+Gwiezdne wojny
+George Lucas
 5
 quiz_04
-Quiz temat nr 4
-Autor 4
+Swiat Tolkiena
+J. R. R. Tolkien
 2
 quiz_05
-Quiz temat nr 5
-Autor 5
+Piraci z Karaibow
+Jack Sparrow
 1
