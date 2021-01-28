@@ -1,6 +1,0 @@
-nick 1
-nazwa_pliku_z_quizem 1.txt
-wygenerowana_nazwa_z_wynikami 1.txt
-nick 2
-nazwa_pliku_z_quizem 2.txt
-wygenerowana_nazwa_z_wynikami 2.txt

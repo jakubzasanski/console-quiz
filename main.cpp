@@ -2,6 +2,7 @@
 #include <limits>
 #include <fstream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -20,6 +21,233 @@ void author(){
     cout << "* Copyright (c) 2020 Krzysztof Karkowski && Jakub Zasanski" << endl;
     cout << "*********************************************" << endl;
 }
+void user_results(){
+    string nick;
+
+    cout << "Podaj nick: " << endl ;
+
+    fstream result_list;
+    result_list.open("result_list.txt", ios::in);
+
+    if (result_list.good()){
+        string fileLine;
+        int i;
+        while(getline(result_list,fileLine)){
+
+            if (fileLine == nick){
+                for( i=0; i < 3; i++ )
+                {
+
+                    switch (i) {
+                        case 0:
+                            cout << "\t" << "Nick: " << fileLine << endl;
+                            break;
+                        case 1:
+                            getline( result_list, fileLine );
+                            cout << "\t" << "Nazwa quizu: " << fileLine << endl;
+
+                            break;
+                        case 2:
+                            getline( result_list, fileLine );
+                            cout << "\t" << "Wynik: " << fileLine << endl << endl;
+
+                            break;
+                    }
+                 }
+            }
+        }
+        if(i < 2) {
+            cout << "\t" <<"Taki zawodnik nie istnieje, sprobuj ponownie" << endl;
+        }
+    }
+    result_list.close();
+}
+
+void quiz_results(){
+    string quiz_name;
+
+    cout << "Podaj nazwe quizu: " << endl ;
+
+
+    fstream result_list;
+    result_list.open("result_list.txt", ios::in);
+    if (result_list.good()){
+        string fileLine;
+        string tab[3];
+        int i;
+        while(getline(result_list,fileLine)){
+             if(fileLine == quiz_name) {
+                 for ( i = 0; i < 3; i++) {
+
+                     switch (i) {
+                         case 0:
+                             tab[i] = fileLine;
+                             break;
+                         case 1:
+                             getline(result_list, fileLine);
+                             tab[i] = fileLine;
+                             break;
+                         case 2:
+                             getline(result_list, fileLine);
+                             tab[i] = fileLine;
+                             getline(result_list, fileLine);
+                             break;
+                     }
+                 }
+                     cout << endl << "\t" << "Autor:" << tab[0] << endl;
+                     cout << "\t" << "Nazwa quizu:" << tab[1] << endl;
+                     cout << "\t" << "Wynik:" << tab[2] << endl;
+             }
+        }
+        if(i != 3){
+            cout << endl << "\t" << "Brak takiego quizu lub nie ma wyniku!" <<  endl;
+        }
+    }
+    result_list.close();
+}
+
+
+void best_results(){
+    string quiz_name;
+
+    cout << "Podaj nazwe quizu: " << endl ;
+
+
+    fstream result_list;
+    result_list.open("result_list.txt", ios::in);
+    if (result_list.good()){
+        string best_value;
+        string fileLine;
+        string tab[1];
+        string test;
+        int i;
+        vector<string>percent;
+
+        while(getline(result_list,fileLine)){
+
+            for(i = 0; i < 2; i++ )
+            {
+
+                switch (i) {
+                    case 0:
+                        getline( result_list, fileLine );
+                        tab[i]= fileLine;
+
+                        break;
+                    case 1:
+                        getline( result_list, fileLine );
+                        getline( result_list, fileLine );
+                        tab[i]= fileLine;
+
+                        break;
+
+                }
+            }
+
+
+            if(quiz_name == tab[0]){
+                test = tab[1];
+                percent.push_back(test);
+            }
+
+        }
+        if(i>2) {
+            for (int z = 0; z < percent.size(); z++) {
+                if (percent[z] > best_value) {
+                    best_value = percent[z];
+                }
+            }
+            cout << "\t" << "Nazwa quizu: " << quiz_name << endl;
+            cout << "\t" << "Najlepszy wynik: " << best_value << "% poprawnych odpowiedzi" << endl;
+        }else{
+            cout << "\t" << "Brak takiego quizu lub nie ma wyniku!" << endl;
+        }
+    }
+    result_list.close();
+}
+
+void  latest_results(){
+
+        fstream result_list;
+        result_list.open("result_list.txt", ios::in);
+        if (result_list.good()){
+            string fileLine;
+            int counter = 1;
+            while(getline(result_list,fileLine)){
+                if(counter<11) {
+                    cout << endl << counter <<'.';
+                    for (int i = 0; i < 3; i++) {
+
+                        switch (i) {
+                            case 0:
+                                cout << endl << "\t" << "Nick: " << fileLine << endl;
+                                break;
+                            case 1:
+                                getline(result_list, fileLine);
+                                cout << "\t" << "Nazwa quizu: " << fileLine << endl;
+
+                                break;
+                            case 2:
+                                getline(result_list, fileLine);
+                                cout << "\t" << "Wynik: " << fileLine << endl;
+                                getline(result_list, fileLine);
+
+                                break;
+                        }
+
+                    }
+
+                 counter++;
+                }
+                else{
+                    return;
+                }
+            }
+        }
+        result_list.close();
+    }
+
+
+
+void result_menu(){
+
+        cout << "*********************************************" << endl;
+        cout << "* [0] - Powrot do menu glownego" << endl;
+        cout << "* [1] - Wyniki dla uzytkownika" << endl;
+        cout << "* [2] - Wyniki dla quizu" << endl;
+        cout << "* [3] - Najlepszy wynik w quizie" << endl;
+        cout << "* [4] - Ostatnie 10 wynikow" << endl;
+        cout << "*********************************************" << endl;
+
+        cout << "Wybierz opcje:";
+
+        int result_menu;
+
+        while(!(cin >> result_menu) || (result_menu < 0) || result_menu > 4 ){
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+
+        switch(result_menu){
+            case 1:
+              user_results() ;
+                break;
+            case 2:
+                quiz_results();
+                break;
+            case 3:
+                best_results();
+                break;
+            case 4:
+                latest_results();
+                break;
+        }
+
+
+
+
+    }
+
 
 void start_quiz(string quiz_name){
     fstream quiz;
@@ -107,7 +335,19 @@ void start_quiz(string quiz_name){
         }
         quiz.close();
 
-        cout << endl << "Dziekujmy za podejscie! Twoje wyniki zostaly zapisane." << endl << endl;
+        fstream results_list;
+        results_list.open("result_list.txt", ios::out | ios::app);
+        if (results_list.good()){
+            double percent = (float (correct_answer) / float((correct_answer + bad_answer))) * 100;
+            results_list << nick << endl;
+            results_list << quiz_name << endl;
+            results_list << correct_answer << '/' << correct_answer + bad_answer << "p."  << endl;
+            results_list << percent << endl ;
+
+            cout << endl << "Dziekujmy za podejscie! Twoje wyniki zostaly zapisane." << endl << endl;
+
+        }
+
 
 //        for(i=0; i<array_size; i++ ){
 //            cout << array[i] << endl;
@@ -248,7 +488,7 @@ int main() {
                 quiz_list();
                 break;
             case 2:
-
+                result_menu();
                 break;
             case 3:
                 author();
