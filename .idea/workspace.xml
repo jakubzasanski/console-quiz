@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ccebc14-ae6a-4015-9376-6e7f3f500d50" name="Default Changelist" comment="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja." />
+    <list default="true" id="8ccebc14-ae6a-4015-9376-6e7f3f500d50" name="Default Changelist" comment="Dodanie przykladowoych quizow.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

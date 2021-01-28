@@ -350,6 +350,16 @@ void start_quiz(string quiz_name){
         }
         quiz.close();
 
+        // Wyniki
+        // nick - nick
+        // quiz_name - nazwa pliku z quizem
+        // nazwa nowego pliku trzeba wygnerować
+        // nowy plik nazwany wczesniej wygnerowana nazwa
+        // correct_answer - ilosc poprawnych
+        // bad_answer - niepoprawnych
+        // array_size - wielkosc tablicy
+        // array - tablica z udzielonymi odpowiedziami
+
         fstream results_list;
         results_list.open("result_list.txt", ios::out | ios::app);
         if (results_list.good()){
@@ -362,22 +372,6 @@ void start_quiz(string quiz_name){
             cout << endl << "Dziekujmy za podejscie! Twoje wyniki zostaly zapisane." << endl << endl;
 
         }
-
-
-//        for(i=0; i<array_size; i++ ){
-//            cout << array[i] << endl;
-//        }
-
-        //TUTAJ tutaj powinno dodawać wpis do results_list i tworzyc plik z wynikami tego podejscia
-        // nick - nick
-        // quiz_name - nazwa pliku z quizem
-        // nazwa nowego pliku trzeba wygnerować
-
-        // nowy plik nazwany wczesniej wygnerowana nazwa
-        // correct_answer - ilosc poprawnych
-        // bad_answer - niepoprawnych
-        // array_size - wielkosc tablicy
-        // array - tablica z udzielonymi odpowiedziami
 
         delete [] array;
     }
@@ -493,7 +487,7 @@ int main() {
 
         cout << "Wybierz opcje:";
 
-        while(!(cin >> nav) || (nav != 1 && nav != 2 && nav != 3)){
+        while(!(cin >> nav) || (nav != 1 && nav != 2 && nav != 3 && nav != 4)){
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
