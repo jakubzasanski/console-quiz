@@ -11,19 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ccebc14-ae6a-4015-9376-6e7f3f500d50" name="Default Changelist" comment="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja.">
-      <change afterPath="$PROJECT_DIR$/.idea/console-quiz.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz_01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz_02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_02.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz_03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_03.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz_04.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_04.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz_05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_05.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_list.txt" afterDir="false" />
-    </list>
+    <list default="true" id="8ccebc14-ae6a-4015-9376-6e7f3f500d50" name="Default Changelist" comment="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

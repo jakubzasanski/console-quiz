@@ -133,7 +133,7 @@ void best_results(){
         string best_value;
         string fileLine;
         string tab[1];
-        string test;
+        string save_tab;
         int i;
         vector<string>percent;
 
@@ -160,8 +160,8 @@ void best_results(){
 
 
             if(quiz_name == tab[0]){
-                test = tab[1];
-                percent.push_back(test);
+                save_tab = tab[1];
+                percent.push_back(save_tab);
             }
 
         }
