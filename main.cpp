@@ -202,7 +202,7 @@ void best_results(){
     result_list.close();
 }
 
-void  latest_results(){
+void  first_results(){
     fstream result_list;
     result_list.open("result_list.txt", ios::in);
     if (result_list.good()){
@@ -253,7 +253,7 @@ void result_menu(){
     cout << "* [1] - Wyniki dla uzytkownika" << endl;
     cout << "* [2] - Wyniki dla quizu" << endl;
     cout << "* [3] - Najlepszy wynik w quizie" << endl;
-    cout << "* [4] - 10 wynikow" << endl;
+    cout << "* [4] - 10 pierwszych wynikow" << endl;
     cout << "*********************************************" << endl;
 
     cout << "Wybierz opcje:";
@@ -276,7 +276,7 @@ void result_menu(){
             best_results();
             break;
         case 4:
-            latest_results();
+            first_results();
             break;
     }
 }
@@ -389,6 +389,9 @@ void start_quiz(string quiz_name){
 
             cout << endl << "Dziekujmy za podejscie! Twoje wyniki zostaly zapisane." << endl << endl;
 
+        }
+        else{
+            file_load_error();
         }
 
         delete [] array;
