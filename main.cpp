@@ -36,34 +36,46 @@ void user_results(){
 
     if (result_list.good()){
         string fileLine;
+        string tab[3];
+        int quiz_exist = 0;
         int i;
         while(getline(result_list,fileLine)){
 
-            if (fileLine == nick){
+
                 for( i=0; i < 3; i++ )
                 {
 
                     switch (i) {
                         case 0:
-                            cout << "\t" << "Nick: " << fileLine << endl;
+                            tab[i] = fileLine;
                             break;
                         case 1:
-                            getline( result_list, fileLine );
-                            cout << "\t" << "Nazwa quizu: " << fileLine << endl;
-
+                            getline(result_list, fileLine);
+                            tab[i] = fileLine;
                             break;
                         case 2:
-                            getline( result_list, fileLine );
-                            cout << "\t" << "Wynik: " << fileLine << endl << endl;
-
+                            getline(result_list, fileLine);
+                            tab[i] = fileLine;
+                            getline(result_list, fileLine);
                             break;
                     }
-                 }
-            }
+
+                }
+
+                if(tab[0] == nick) {
+                    quiz_exist = 1;
+                    cout << endl << "\t" << "Autor:" << tab[0] << endl;
+                    cout << "\t" << "Nazwa quizu:" << tab[1] << endl;
+                    cout << "\t" << "Wynik:" << tab[2] << endl;
+                }
+
         }
-        if(i < 2) {
-            cout << "\t" <<"Taki zawodnik nie istnieje, sprobuj ponownie" << endl;
+        if(quiz_exist == 0){
+            cout << endl << "\t" << "Brak takiego nicku lub nie ma zapisanego wyniku!" <<  endl;
         }
+    }
+    else{
+        file_load_error();
     }
     result_list.close();
 }
@@ -83,9 +95,10 @@ void quiz_results(){
     if (result_list.good()){
         string fileLine;
         string tab[3];
+        int quiz_exist = 0;
         int i;
         while(getline(result_list,fileLine)){
-             if(fileLine == quiz_name) {
+
                  for ( i = 0; i < 3; i++) {
 
                      switch (i) {
@@ -103,14 +116,20 @@ void quiz_results(){
                              break;
                      }
                  }
+
+            if(tab[1] == quiz_name) {
+                     quiz_exist = 1;
                      cout << endl << "\t" << "Autor:" << tab[0] << endl;
                      cout << "\t" << "Nazwa quizu:" << tab[1] << endl;
                      cout << "\t" << "Wynik:" << tab[2] << endl;
              }
         }
-        if(i != 3){
+        if(quiz_exist == 0){
             cout << endl << "\t" << "Brak takiego quizu lub nie ma wyniku!" <<  endl;
         }
+    }
+    else{
+        file_load_error();
     }
     result_list.close();
 }
@@ -178,6 +197,9 @@ void best_results(){
             cout << "\t" << "Brak takiego quizu lub nie ma wyniku!" << endl;
         }
     }
+    else{
+        file_load_error();
+    }
     result_list.close();
 }
 
@@ -218,9 +240,12 @@ void  latest_results(){
                     return;
                 }
             }
+        }else{
+            file_load_error();
         }
         result_list.close();
     }
+
 
 
 
