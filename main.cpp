@@ -253,7 +253,7 @@ void result_menu(){
     cout << "* [1] - Wyniki dla uzytkownika" << endl;
     cout << "* [2] - Wyniki dla quizu" << endl;
     cout << "* [3] - Najlepszy wynik w quizie" << endl;
-    cout << "* [4] - Ostatnie 10 wynikow" << endl;
+    cout << "* [4] - 10 wynikow" << endl;
     cout << "*********************************************" << endl;
 
     cout << "Wybierz opcje:";
