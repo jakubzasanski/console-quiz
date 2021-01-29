@@ -368,16 +368,6 @@ void start_quiz(string quiz_name){
         }
         quiz.close();
 
-        // Wyniki
-        // nick - nick
-        // quiz_name - nazwa pliku z quizem
-        // nazwa nowego pliku trzeba wygnerować
-        // nowy plik nazwany wczesniej wygnerowana nazwa
-        // correct_answer - ilosc poprawnych
-        // bad_answer - niepoprawnych
-        // array_size - wielkosc tablicy
-        // array - tablica z udzielonymi odpowiedziami
-
         fstream results_list;
         results_list.open("result_list.txt", ios::out | ios::app);
         if (results_list.good()){
