@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ccebc14-ae6a-4015-9376-6e7f3f500d50" name="Default Changelist" comment="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz_05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz_05.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +100,7 @@
       <workItem from="1611865117193" duration="109000" />
       <workItem from="1611934729596" duration="1725000" />
       <workItem from="1611938288020" duration="3815000" />
+      <workItem from="1611949438982" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="Dodanie odczytu quizu, 5xtemplate quizz sekcja o tworcach, licencja.">
       <created>1610752237465</created>
